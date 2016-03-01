@@ -74,6 +74,7 @@ public class SoftKeyboard extends InputMethodService
     private LatinKeyboard mSymbolsKeyboard;
     private LatinKeyboard mSymbolsShiftedKeyboard;
     private LatinKeyboard mQwertyKeyboard;
+    private LatinKeyboard mPinyinKeyboard;
     
     private LatinKeyboard mCurKeyboard;
     
@@ -105,6 +106,7 @@ public class SoftKeyboard extends InputMethodService
         mQwertyKeyboard = new LatinKeyboard(this, R.xml.qwerty);
         mSymbolsKeyboard = new LatinKeyboard(this, R.xml.symbols);
         mSymbolsShiftedKeyboard = new LatinKeyboard(this, R.xml.symbols_shift);
+        mPinyinKeyboard = new LatinKeyboard(this,R.xml.pinyin);
     }
     
     /**
@@ -652,7 +654,8 @@ public class SoftKeyboard extends InputMethodService
     }
 
     private void handleLanguageSwitch() {
-        mInputMethodManager.switchToNextInputMethod(getToken(), false /* onlyCurrentIme */);
+        setLatinKeyboard(mPinyinKeyboard);
+//        mInputMethodManager.switchToNextInputMethod(getToken(), false /* onlyCurrentIme */);
     }
 
     private void checkToggleCapsLock() {

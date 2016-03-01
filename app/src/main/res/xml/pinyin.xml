@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0px"
+    android:keyHeight="@dimen/key_height"
+    android:keyWidth="22%p"
+    android:verticalGap="0px">
+
+    <Row>
+        <Key android:keyLabel=","
+            android:keyWidth="17%p"
+            android:keyEdgeFlags="left"
+            />
+        <Key
+            android:codes="119"
+            android:keyLabel="1/分词" />
+        <Key
+            android:codes="113"
+            android:keyLabel="2/abc" />
+        <Key
+            android:codes="119"
+            android:keyEdgeFlags="right"
+            android:keyLabel="3/def" />
+        <Key android:keyLabel="←"
+            android:keyWidth="17%p"
+            android:keyEdgeFlags="right"
+            />
+    </Row>
+    <Row>
+        <Key android:keyLabel="。"
+            android:keyWidth="17%p"
+            android:keyEdgeFlags="left"
+            />
+        <Key
+            android:codes="101"
+            android:keyLabel="4/ghi" />
+        <Key
+            android:codes="114"
+            android:keyLabel="5/jkl" />
+        <Key
+            android:codes="116"
+
+            android:keyLabel="6/mno" />
+        <Key android:keyLabel="表情"
+            android:keyWidth="17%p"
+            android:keyEdgeFlags="right"
+            />
+    </Row>
+    <Row>
+        <Key android:keyLabel="？"
+            android:keyEdgeFlags="left"
+            android:keyWidth="17%p"
+            />
+        <Key
+            android:codes="121"
+            android:keyLabel="7/pqrs" />
+        <Key
+            android:codes="117"
+            android:keyLabel="8/tuv" />
+        <Key
+            android:codes="105"
+            android:keyLabel="9/wxyz" />
+        <Key android:keyLabel="符号"
+            android:keyWidth="17%p"
+            android:keyEdgeFlags="right"
+            />
+    </Row>
+    <Row>
+        <Key android:keyLabel="abc"
+            android:keyWidth="17%p"
+            android:keyEdgeFlags="left"
+            />
+        <Key android:keyLabel="123"
+            android:keyWidth="17%p"
+            />
+        <Key android:keyLabel="___"
+            android:keyWidth="32%p"
+            />
+        <Key android:keyLabel="更"
+            android:keyWidth="17%p"
+            />
+        <Key android:keyLabel="回车"
+            android:keyWidth="17%p"
+            />
+    </Row>
+
+</Keyboard>
